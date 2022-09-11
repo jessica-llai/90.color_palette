@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% import 'bootstrap/wtf.html' as wtf %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Platte</title>
+    <link href="static/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+<nav>
+    <a href="{{url_for('color_platte')}}">Home</a>
+</nav>
+<div>
+{{wtf.quick_form(form)}}
+</div>
+<div class="container">
+    <div class="img">
+        <img src="https://images.unsplash.com/photo-1662556263348-ad0906c0dd4b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2532&q=80">
+    </div>
+    <div class="text">
+        <ul>
+            <li>#8EB5C4</li>
+            <li>#000700</li>
+            <li>#463C18</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+<footer>
+    copyright @Yijing Lai 2022
+</footer>
+</html>
